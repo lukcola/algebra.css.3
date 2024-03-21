@@ -16,3 +16,54 @@ body {
     position: relative;
     transform: rotate(45deg);
 }
+
+.line1 {
+    width: 110px;
+    background-color: white;
+    height: 10px;
+    top: 40px;
+    position: absolute;
+}
+
+.line1::before {
+    content: "";
+    width: 30px;
+    background-color: white;
+    height: 30px;
+    position: absolute;
+    border-radius: 50%;
+    top: -8px;
+    left: 30px;
+}
+
+.line1::after {
+    content: "";
+    width: 30px;
+    background-color: white;
+    height: 30px;
+    position: absolute;
+    border-radius: 50%;
+    top: -8px;
+    left: 90px;
+}
+
+.line2 {
+    width: 90px;
+    background-color: white;
+    height: 12px;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    transform: rotate(45deg);
+}
+
+.line2::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    top: -8px;
+    left: 70px;
+}
